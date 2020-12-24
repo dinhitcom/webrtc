@@ -1,5 +1,6 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(235, 235, 235);
 }
 
 a {
@@ -16,7 +17,17 @@ a {
 
  .horizontal-scrollable {
   overflow-x: auto;
-  /* white-space: nowrap; */
+  overflow-y: hidden;
+}
+
+#localVideo, #presenterVideo {
+  height: 100%;
+  width: auto;
+}
+
+.control {
+  width: 3rem;
+  height: 3rem;
 }
 /*
 .horizontal-scrollable > .row > .col-4 {

@@ -2,22 +2,30 @@ extends layout
 
 block content
   .container-fluid
+    //video#testing(autoplay playsinline)
     .row#layout
       .col-12.col-md-8.col-lg-9
           .row.h-75.text-center#presenter
-            video#presenterVideo  
-          //.container.horizontal-scrollable 
+            video#presenterVideo(autoplay playsinline)
+            
           .row.horizontal-scrollable.flex-nowrap.h-25#particiants
             .col-4.col-lg-3
-              video#localVideo
-            .col-4.col-lg-3
-              video.remoteVideo
-            .col-4.col-lg-3
-              video.remoteVideo
-            .col-4.col-lg-3
-              video.remoteVideo
-            .col-4.col-lg-3
-              video.remoteVideo
-            .col-4.col-lg-3
-              video.remoteVideo
+              video#localVideo(autoplay playsinline)
+            .col-8.col-lg-9
+              button.btn.btn-outline-primary.rounded-circle.control#camera(title="Turn off camera")
+                <i class="fal fa-video"></i>
+              button.btn.btn-outline-primary.rounded-circle.control#microphone(title="Mute microphone")
+                <i class="fal fa-microphone"></i> 
+              button.btn.btn-outline-danger.rounded-circle.control#hangup(title="Hang up")
+                <i class="fal fa-phone-slash"></i>
+            //- .col-4.col-lg-3
+            //-   video.remoteVideo
+            //- .col-4.col-lg-3
+            //-   video.remoteVideo
+            //- .col-4.col-lg-3
+            //-   video.remoteVideo
+            //- .col-4.col-lg-3
+            //-   video.remoteVideo
+            //- .col-4.col-lg-3
+            //-   video.remoteVideo
       .col-12.col-md-4.col-lg-3.overflow-auto#chatbox
