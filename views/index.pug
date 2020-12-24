@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  .container-fluid
+    .row#layout
+      .col-12.col-md-8.col-lg-9
+          .row.h-75.text-center#presenter
+            video#presenterVideo  
+          //.container.horizontal-scrollable 
+          .row.horizontal-scrollable.flex-nowrap.h-25#particiants
+            .col-4.col-lg-3
+              video#localVideo
+            .col-4.col-lg-3
+              video.remoteVideo
+            .col-4.col-lg-3
+              video.remoteVideo
+            .col-4.col-lg-3
+              video.remoteVideo
+            .col-4.col-lg-3
+              video.remoteVideo
+            .col-4.col-lg-3
+              video.remoteVideo
+      .col-12.col-md-4.col-lg-3.overflow-auto#chatbox

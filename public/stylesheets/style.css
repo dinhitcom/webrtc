@@ -1,0 +1,33 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container-fluid {
+  height: 90vh !important;
+}
+
+#layout {
+  height: 100vh;
+}
+
+ .horizontal-scrollable {
+  overflow-x: auto;
+  /* white-space: nowrap; */
+}
+/*
+.horizontal-scrollable > .row > .col-4 {
+  display: inline-block;
+  float: none;
+} */
+/* 
+#presenter {
+  height: 75%;
+}
+
+#particiants {
+  height: 25%;
+} */
